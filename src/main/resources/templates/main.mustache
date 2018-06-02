@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <div>{{outputSomeInfo}}</div>
+    <div align="center">
+        <form method="post">
+            <input type="text" name="text" placeholder="enter your message text"/>
+            <button type="submit">add message</button>
+        </form>
+    </div>
+    <div align="center"><h1>List of your messages</h1></div>
+    <div align="center">
+        <form method="post" action="filter">
+            <input type="text" name="filter">
+            <button type="submit">Find</button>
+        </form>
+    </div>
+        {{#messages}}
+            <div align="center">
+                <b>{{id}}</b>
+                <span>{{text}}</span>
+            </div>
+        {{/messages}}
 </body>
 </html>
