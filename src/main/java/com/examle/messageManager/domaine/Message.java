@@ -11,25 +11,28 @@ public class Message {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
-    private String textMessage;
+    private String text;
 
     public Message() {
     }
 
+    public Message(String text) {
+        this.text = text;
+    }
 
     public Integer getId() {
         return id;
     }
 
     public String getTextMessage() {
-        return textMessage;
+        return text;
     }
 
     public void setId(Integer id) {
         this.id = id;
     }
 
-    public void setTextMessage(String textMessage) {
-        this.textMessage = textMessage;
+    public void setTextMessage(String text) {
+        this.text = text;
     }
 }
