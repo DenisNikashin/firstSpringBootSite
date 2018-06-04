@@ -15,6 +15,7 @@
             <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
             <button type="submit">Find</button>
         </form>
+
     </div>
     {{#messages}}
         <div align="center">
@@ -22,12 +23,13 @@
             <span>{{text}}</span>
         </div>
     {{/messages}}
-
+    <br>
     <div align="center">
         <form action="/logout" method="post">
             <input type="submit" value="Sign Out"/>
             <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
         </form>
     </div>
+
 </body>
 </html>

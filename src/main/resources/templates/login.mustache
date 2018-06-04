@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
-    <title>Security page</title>
+    <title>Login page</title>
 </head>
 <body>
-    Login page
-    <form action="/login" method="post">
-        <div><label> User Name : <input type="text" name="username"/> </label></div>
+    <p style="font-size:18px" >Hello</p>
+    <form action="/login" method="post" >
+        <div><label> User Name : <input type="text" name="username"/> </label></div><br>
         <div><label> Password: <input type="password" name="password"/> </label></div>
-        <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
-        <div><input type="submit" value="Sign In"/></div>
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}"/><br>
+        <div><input type="submit" value="Sign In"/></div><br>
     </form>
-    <a href="/registration">Add new user</a>
+
+    <form action="/registration">
+        <button type="submit">Add new user</button>
+    </form>
 </body>
 </html>
