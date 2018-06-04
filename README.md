@@ -6,7 +6,7 @@ Implemented:
 -
 - new user registration;
 - login for registered users by login and password; 
-- registered users cen add his messages to the general list; 
+- registered users can add his messages to the general list; 
 - a text message search is performed
 
 What needs to be fixed and added:
