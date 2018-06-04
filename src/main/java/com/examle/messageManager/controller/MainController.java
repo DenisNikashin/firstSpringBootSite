@@ -21,13 +21,13 @@ public class MainController {
         model.put("messages", messages);
     }
 
-    @GetMapping
+    @GetMapping("/main")
     public String main(Map<String, Object> model) {
         workingWithMessages(model);
         return "main";
     }
 
-    @PostMapping
+    @PostMapping("/main")
     public String add(@RequestParam String text, Map<String, Object> model) {
         Message message = new Message(text);
         messageRepo.save(message);
